@@ -12,13 +12,15 @@ Text Domain:  pwgen
 Domain Path:  /pwgen
 */
 
-function display_simple_message() 
+/** Displays the randomly generated password */
+function display_secure_password() 
 {
     $secure_random_password = generate_random_password();
 
     return "<center>$secure_random_password</center>";
 }
 
+/** Generates a random string with length of 22 characters using a fixed alphabet */
 function generate_random_password($length=22) 
 {
     $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!?._-+&';
@@ -32,6 +34,7 @@ function generate_random_password($length=22)
     return $result;
 }
 
-add_shortcode('wpsecpwgen', 'display_simple_message');
+/** add shortcode to wp site */
+add_shortcode('wpsecpwgen', 'display_secure_password');
 
 ?>
