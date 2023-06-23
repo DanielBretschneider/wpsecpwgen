@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name:  WPSecPWGen - Wordpress Secure Password Generator
-Plugin URI:   https://bretschneider.cc/wpsecpwgen.php
+Plugin URI:   https://github.com/DanielBretschneider/wpsecpwgen
 Description:  Simple Password Generator for secure Passwords
 Version:      1.0
 Author:       Daniel Bretschneider
 Author URI:   https://www.bretschneider.cc
 License:      GPL2
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:  wpsecpwgen-wordpress-secure-password-generator
-Domain Path:  /wpsecpwgen-wordpress-secure-password-generator
+Text Domain:  pwgen
+Domain Path:  /pwgen
 */
 
 function display_simple_message() 
